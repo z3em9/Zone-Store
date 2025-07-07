@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zone Store</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Tahoma", sans-serif;
+        background-color: #0d0d0d;
+        color: #f0f0f0;
+      }
+      .banner {
+        width: 100%;
+        height: 220px;
+        background-image: url("https://cdn.discordapp.com/banners/954352750878162974/4da8663ac6a32fd0c214f27b0bad1dd4.webp?size=1024");
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #1a1a1a;
+      }
+      nav button {
+        background-color: transparent;
+        border: none;
+        color: #ccc;
+        padding: 14px 20px;
+        cursor: pointer;
+        font-size: 15px;
+        transition: 0.3s;
+      }
+      nav button:hover,
+      nav button.active {
+        color: #fff;
+        background-color: #3a265e;
+      }
+      main {
+        max-width: 960px;
+        margin: 30px auto;
+        padding: 20px;
+      }
+      section {
+        display: none;
+      }
+      section.active {
+        display: block;
+      }
+      h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #ffacee;
+        border-bottom: 1px solid #444;
+        padding-bottom: 5px;
+      }
+      .subsection {
+        margin-bottom: 30px;
+      }
+      .subsection h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #d8a2ff;
+        border-bottom: 1px solid #555;
+        padding-bottom: 4px;
+      }
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .product {
+        background-color: #1f1f1f;
+        border: 1px solid #333;
+        flex: 1 1 calc(33.33% - 10px);
+        padding: 15px;
+        border-radius: 6px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .product img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin-bottom: 8px;
+      }
+      .description {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #aaa;
+      }
+      .payment-line {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #ccc;
+        font-weight: bold;
+      }
+      a {
+        color: #7ab8ff;
+        text-decoration: underline;
+      }
+      @media (max-width: 768px) {
+        .product {
+          flex: 1 1 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner"></div>
+
+    <nav>
+      <button class="tab-btn active" data-target="branch1">Nitro</button>
+      <button class="tab-btn" data-target="branch2">Boost</button>
+      <button class="tab-btn" data-target="branch3">Credit</button>
+      <button class="tab-btn" data-target="branch4">Effects</button>
+      <button class="tab-btn" data-target="branch5">Visas</button>
+      <button class="tab-btn" data-target="branch6">Tag</button>
+      <button class="tab-btn" data-target="branch7">Token</button>
+    </nav>
+
+    <main>
+      <!-- Nitro Section -->
+      <section id="branch1" class="active">
+        <h2>Nitro</h2>
+        <div class="subsection">
+          <h3>Nitro Gift</h3>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://cdn.discordapp.com/attachments/1382730911392596028/1390507399047282842/46_20250703125605.png"
+                alt="Nitro Gift"
+              />
+              Nitro Gift 1 Month
+              <div class="description">23,5 ريال</div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Nitro</h3>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://cdn.discordapp.com/attachments/1382730911392596028/1390507399047282842/46_20250703125605.png"
+                alt="Nitro"
+              />
+              Nitro 1 Year
+              <div class="description">185 ريال</div>
+            </div>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Nitro Link</h3>
+          <div class="products">
+            <div class="product">
+              <img
+                src="https://cdn.discordapp.com/attachments/1382730911392596028/1390507399047282842/46_20250703125605.png"
+                alt="Nitro Link"
+              />
+              Nitro 3 Month
+              <div class="description">12,5 ريال</div>
+            </div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+
+      <!-- Boost Section -->
+      <section id="branch2">
+        <h2>Boost</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730912524931203/1390507735665217536/46_20250704042300.png"
+              alt="14 Boost"
+            />
+            1 Month
+            <div class="description">10 ريال</div>
+          </div>
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730912524931203/1390507735665217536/46_20250704042300.png"
+              alt="14 Boost"
+            />
+            3 Months
+            <div class="description">30 ريال</div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+
+      <!-- Credit Section -->
+      <section id="branch3">
+        <h2>Credit</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730913682817056/1390507842448130069/46_20250704042434.png"
+              alt="Credit"
+            />
+            100m
+            <div class="description">2,5 ريال</div>
+          </div>
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730913682817056/1390507842448130069/46_20250704042434.png"
+              alt="Credit"
+            />
+            500m
+            <div class="description">10,5 ريال</div>
+          </div>
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730913682817056/1390507842448130069/46_20250704042434.png"
+              alt="Credit"
+            />
+            1b
+            <div class="description">21 ريال</div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+
+      <!-- Effects Section -->
+      <section id="branch4">
+        <h2>Effects</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730914831794186/1390507926501986364/46_20250704042543.png"
+              alt="Effect"
+            />
+            1$
+            <div class="description">62m Credit</div>
+          </div>
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730914831794186/1390507926501986364/46_20250704042543.png"
+              alt="Effect"
+            />
+            5$
+            <div class="description">310m Credit</div>
+          </div>
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730914831794186/1390507926501986364/46_20250704042543.png"
+              alt="Effect"
+            />
+            10$
+            <div class="description">620m Credit</div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+
+      <!-- Visas Section -->
+      <section id="branch5">
+        <h2>Visas</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730918103351368/1390508087475179550/46_20250704042700.png"
+              alt="Visa"
+            />
+            Visa 1
+            <div class="description">50m Credit / 2 ريال</div>
+          </div>
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1382730918103351368/1390508087475179550/46_20250704042700.png"
+              alt="Visa"
+            />
+            Visa 2
+            <div class="description">100m Credit / 3 ريال</div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+
+      <!-- Tag Section -->
+      <section id="branch6">
+        <h2>Tag</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1384551275831754874/1390508186649235516/46_20250704042744.png"
+              alt="Tag"
+            />
+            Server
+            <div class="description">30m Credit</div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+
+      <!-- Token Section -->
+      <section id="branch7">
+        <h2>Token</h2>
+        <div class="products">
+          <div class="product">
+            <img
+              src="https://cdn.discordapp.com/attachments/1387129039533117530/1390508309710372995/46_20250704042838.png"
+              alt="Token"
+            />
+            Soon...
+            <div class="description">Soon...</div>
+          </div>
+        </div>
+        <div class="payment-line">طرق الدفع = راجحي - STC - يورباي</div>
+        <div class="payment-line">
+          للتواصل والدعم:
+          <a href="https://discord.gg/jYGcCKZvPa" target="_blank"
+            >https://discord.gg/jYGcCKZvPa</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <script>
+      const buttons = document.querySelectorAll(".tab-btn");
+      const sections = document.querySelectorAll("main section");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.remove("active"));
+          sections.forEach((s) => s.classList.remove("active"));
+          btn.classList.add("active");
+          const target = btn.getAttribute("data-target");
+          document.getElementById(target).classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
